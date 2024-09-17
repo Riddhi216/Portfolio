@@ -14,9 +14,9 @@
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#projects">Projects</a></li>
             <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="#resume">Resume</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -25,7 +25,7 @@
     <!-- Home Page -->
     <section id="home">
         <div class="hero">
-            <h1>Welcome to Riddhi's Portfolio</h1>
+            <h1><marquee>Welcome to Riddhi's Portfolio</marquee></h1>
             <p>Full Stack Developer with expertise in HTML, CSS, JavaScript, and more.</p>
             <button>View Projects</button>
         </div>
@@ -36,12 +36,14 @@
         <h1>About Me</h1>
         <div class="about-content">
             <div class="about-text">
+                <div class="about-para">
                 <p>Riddhi Jain is a full stack developer with a passion for building innovative and user-friendly applications.</p>
                 <p>Here are some key highlights of my experience and skills:</p>
+            </div>
                 <ul class="skills-list">
                     <li>Full Stack Development</li>
                     <li>HTML, CSS, JavaScript</li>
-                    <li>Responsive Design</li>
+                    <li>Responsive Design</li>  
                     <li>Search Engine Optimization</li>
                     <li>React.js</li>
                     <li>Node.js</li>
@@ -55,6 +57,42 @@
         </div>
     </section>
 
+        <!-- Education Page -->
+        <section id="education">
+            <h1>Education</h1>
+            <div class="education-list">
+                <div class="education-item">
+                    <h3>Bachelor's Degree in Computer Applications</h3>
+                    <p>Maharshi Dayanand Saraswati University,Ajmer</p>
+                </div>
+                <div class="education-item">
+                    <h3>Master's Degree in Computer Applications</h3>
+                    <p>Ajeenkya Dy Patil University,Pune</p>
+                </div>
+            </div>
+        </section>
+
+     <!-- Projects Page -->
+    <section id="projects">
+        <h1>Recent Projects</h1>
+        <div class="projects-list">
+            <div class="project-item">
+                <h3>ToDoList</h3>
+                <p>"Simple task organizer to keep you on track. Add, edit, and check off tasks for ultimate productivity." </p>
+                <a href="todolist4.html">View Project</a>
+            </div>
+            <div class="project-item">
+                <h3>Quiz App</h3>
+                <p>Ask Questions according your choosed option </p>
+                <a href="https://github.com/Riddhi216/Quiz-App">View Project</a>
+            </div>
+            <div class="project-item">
+                <h3>Project 3</h3>
+                <p>Description of Project 3</p>
+                <a href="project3.html">View Project</a>
+            </div>
+        </div>
+    </section>
     <!-- Services Page -->
     <section id="services">
         <h1>Services</h1>
@@ -78,43 +116,6 @@
         </div>
     </section>
 
-    <!-- Projects Page -->
-    <section id="projects">
-        <h1>Recent Projects</h1>
-        <div class="projects-list">
-            <div class="project-item">
-                <h3>ToDoList</h3>
-                <p>"Simple task organizer to keep you on track. Add, edit, and check off tasks for ultimate productivity." </p>
-                <a href="todolist4.html">View Project</a>
-            </div>
-            <div class="project-item">
-                <h3>Project 2</h3>
-                <p>Description of Project 2</p>
-                <a href="project2.html">View Project</a>
-            </div>
-            <div class="project-item">
-                <h3>Project 3</h3>
-                <p>Description of Project 3</p>
-                <a href="project3.html">View Project</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Page -->
-    <section id="education">
-        <h1>Education</h1>
-        <div class="education-list">
-            <div class="education-item">
-                <h3>Bachelor's Degree in Computer Applications</h3>
-                <p>Maharshi Dayanand Saraswati University,Ajmer</p>
-            </div>
-            <div class="education-item">
-                <h3>Master's Degree in Computer Applications</h3>
-                <p>Ajeenkya Dy Patil University,Pune</p>
-            </div>
-        </div>
-    </section>
-
     <!-- Resume Page -->
     <section id="resume">
         <h1>Resume</h1>
@@ -130,7 +131,7 @@
     <section id="contact">
         <h1>Contact Me</h1>
         <div class="contact-form">
-            <form>
+            <form action="index.php" method="post">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" placeholder="Enter your name">
                 <label for="email">Email:</label>
